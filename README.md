@@ -23,3 +23,7 @@ Buat database dengan nama dbiot
 - Migrasikan table ke database dengan perintah php artisan migrate
 - Jalankan program dengan perintah php artisan serve
 - Buka web di browser
+
+## Petunjuk Penggunaan
+
+Registrasi terlebih dahulu agar dapat melakkan login
