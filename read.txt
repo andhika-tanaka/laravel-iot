@@ -1,0 +1,7 @@
+buka terminal/cmd
+
+git clone
+
+masuk ke file
+
+buat database di postgresql
