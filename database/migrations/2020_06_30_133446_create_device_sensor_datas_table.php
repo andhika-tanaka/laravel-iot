@@ -14,7 +14,9 @@ class CreateDeviceSensorDatasTable extends Migration
     public function up()
     {
         Schema::create('device_sensor_datas', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('device_sensor_id');
+            $table->float('result');
             $table->timestamps();
         });
     }
