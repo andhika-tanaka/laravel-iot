@@ -1,5 +1,9 @@
 <h1 align="center">Petunjuk Penggunaan</h1>
 
+## Rancangan ERD
+
+https://drive.google.com/file/d/12dTmawp0wyY-K1SOZG8OMjHjH8EVQLYr/preview
+
 ## Software yang Digunakan
 
 - PostgreSQL
