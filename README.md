@@ -19,11 +19,11 @@ Buat database dengan nama dbiot
 - Buka terminal
 - Copy file .env.example dengan perintah cp .env.example .env
 - Tambahkan application key dengan perintah php artisan key:generate
-- Sesuaikan file .env denga pengaturan mesin masing-masing
+- Sesuaikan file .env dengan pengaturan mesin masing-masing
 - Migrasikan table ke database dengan perintah php artisan migrate
 - Jalankan program dengan perintah php artisan serve
 - Buka web di browser
 
 ## Petunjuk Penggunaan
 
-Registrasi terlebih dahulu agar dapat melakkan login
+Registrasi terlebih dahulu agar dapat melakukan login
