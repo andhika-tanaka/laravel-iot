@@ -108,7 +108,6 @@ class UserController extends Controller
         $this->validate($request, [
             'name' => 'required|min:2', 
             'email' => 'required', 
-            'password' => 'required|min:8',
             'address' => 'required|min:3', 
             'phone_number' => 'required|min:6'
         ]);
@@ -136,7 +135,7 @@ class UserController extends Controller
         //
         $user = new User;
 
-        $delete = $user->find($id)->delete();
+        $user->find($id)->delete();
 
         return redirect()->route('user.index');
     }

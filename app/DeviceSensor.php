@@ -20,7 +20,7 @@ class DeviceSensor extends Model
         return $this->belongsTo('App\Sensor', 'sensor_id');
     }
 
-    public function datas(){
+    public function deviceSensorDatas(){
         return $this->hasMany('App\DeviceSensorData');
     }
 }

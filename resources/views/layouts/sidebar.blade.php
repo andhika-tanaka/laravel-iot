@@ -1,7 +1,7 @@
 <div class="col-md-3 left_col">
     <div class="left_col scroll-view">
         <div class="navbar nav_title" style="border: 0;">
-            <a href="#" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+            <a href="#" class="site_title"><i class="fa fa-paw"></i> <span>Laravel IOT</span></a>
         </div>
 
         <div class="clearfix"></div>
@@ -33,7 +33,6 @@
                     <li><a href="{{route('device.index')}}"><i class="fa fa-home"></i> Device </a></li>
                     <li><a href="{{route('sensor.index')}}"><i class="fa fa-home"></i> Sensor </a></li>
                     <li><a href="{{route('sensorCategory.index')}}"><i class="fa fa-home"></i> Sensor Category </a></li>
-                    <li><a href="{{route('data.index')}}"><i class="fa fa-home"></i> Data </a></li>
                 </ul>
             </div>
 

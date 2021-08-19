@@ -16,24 +16,23 @@ use Illuminate\Support\Facades\Session;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('index');
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home')->middleware('auth');
 
-Route::resource('user', 'UserController');
-Route::resource('deviceSensor', 'DeviceSensorController');
-Route::resource('device', 'DeviceController');
-Route::resource('sensor', 'SensorController');
-Route::resource('sensorCategory', 'SensorCategoryController');
+Route::resource('user', 'UserController')->middleware('auth');
+Route::resource('deviceSensor', 'DeviceSensorController')->middleware('auth');
+Route::resource('device', 'DeviceController')->middleware('auth');
+Route::resource('sensor', 'SensorController')->middleware('auth');
+Route::resource('sensorCategory', 'SensorCategoryController')->middleware('auth');
 Auth::routes();
 
 Route::get('/logout', function()
 	{
 		Auth::logout();
         Session::flush();
-		return Redirect::to('/home');
+		return Redirect::to('/');
 	});
 
-Route::get('/home', 'HomeController@index')->name('home');

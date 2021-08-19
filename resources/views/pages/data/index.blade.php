@@ -33,7 +33,7 @@
                                     @foreach($datas as $data)
                                     <tr scope="row">
                                         <td>{{$data->id}}</td>
-                                       
+                                        <td>{{$data->device_sensor->id}}</td>
                                         <td>{{$data->result}}</td>
                                         <td>
                                             <!--Delete Button-->

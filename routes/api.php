@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DeviceSensorDataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::Resource('data', 'API\DeviceSensorDataController');
+Route::get('deviceSensorData', [DeviceSensorDataController::class, 'index']);
+Route::post('deviceSensorData', [DeviceSensorDataController::class, 'store']);
+Route::delete('deviceSensorData/{id}', [DeviceSensorDataController::class, 'destroy']);
